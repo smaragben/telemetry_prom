@@ -1,0 +1,291 @@
+
+/************************************ FONTS ************************************/
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+/* entypo */
+[class*="entypo-"]:before {
+font-family: 'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+font-family: 'FontAwesome', sans-serif;
+}
+/* zocial */
+[class*="zocial-"]:before {
+font-family: 'zocial', sans-serif;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:url('https://jlalovi-cv.herokuapp.com/font/icomoon.eot');
+    src:url('https://jlalovi-cv.herokuapp.com/font/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('https://jlalovi-cv.herokuapp.com/font/icomoon.ttf') format('truetype'),
+        url('https://jlalovi-cv.herokuapp.com/font/icomoon.woff') format('woff'),
+        url('https://jlalovi-cv.herokuapp.com/font/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style:italic;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-cloudy:before {
+    content: "\e60f";
+}
+.icon-sun:before {
+    content: "\e610";
+}
+.icon-cloudy2:before {
+    content: "\e611";
+}
+/************************************* END FONTS *************************************/
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+body {
+    background-color: #343d4b;
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-bg);
+    border-radius: 10px;
+    }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 10px;
+}
+h2 {
+    font-size: 17px;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, p, a, span{
+    color: #fff;
+}
+.scnd-font-color {
+    color: #9099b7;
+}
+
+
+
+.horizontal-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.horizontal-list li {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.titular {
+    display: block;
+    line-height: 40px;
+    margin: 0;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.button {
+    display: block;
+    width: 175px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+/** MAIN CONTAINER **/
+
+.main-container {
+    font-family: 'Ubuntu', sans-serif;
+    width: 1690px;
+    height: 1725px;
+    margin: 6em auto;
+ }
+html {
+overflow: scroll;
+overflow-x: hidden;
+}
+::-webkit-scrollbar {
+width: 0px;  /* Remove scrollbar space */
+background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+
+.content {
+    position: relative;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    position:absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-size: 35px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    top: 60px;
+    left: 200px ;
+    height: 50px;
+}
+.content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+    font-family: Nunito;
+    text-shadow: 0 2px 2px #000;
+}
+
+
+.content__container__text {
+    display: inline;
+    float: left;
+    line-height: 40px;
+    margin: 0;
+}
+.content__container__list {
+    margin-top: 0;
+    padding-left: 130px;
+    text-align: left;
+    list-style: none;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.content__container__list__item {
+    line-height: 40px;
+    margin: 0;
+}
+
+@-webkit-keyframes change {
+    0%, 12.66%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+    16.66%, 29.32% {
+        -webkit-transform: translate3d(0, -25%, 0);
+                transform: translate3d(0, -25%, 0);
+    }
+}
+
+
+@keyframes change {
+    0%, 12.66%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+    16.66%, 29.32% {
+        -webkit-transform: translate3d(0, -25%, 0);
+                transform: translate3d(0, -25%, 0);
+    }
+}
+.time_picker {
+ width: 140px;
+ height:40px;
+ font-size: 14px;
+ cursor: pointer;
+ border:0.1em solid #FFFFFF;
+ background: transparent;
+ color: white;
+font-family: 'Exo', sans-serif;
+ font-weight: 700;
+ position: relative;
+ transition: all 0.5s;
+ z-index: 1;
+}
+
+.time_picker::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 5px;
+ height: 100%;
+ background: rgba(255, 255, 255, 0.5);
+ z-index: -1;
+ transition: all 0.5s;
+}
+
+.time_picker:hover::before {
+ width: 100%;
+}
+
+.time_picker:hover {
+ color: white;
+}
+
+.time_picker:active:before {
+ background: rgba(255, 255, 255,1);
+}

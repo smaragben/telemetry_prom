@@ -1,0 +1,40 @@
+.right-container {}
+
+
+.value-chart {
+    height: 380px;
+    width:630px;
+}
+    .value-chart .titular {
+        padding: 10px 10px;
+    }
+
+    .donut-chart {
+        position: relative;
+            width: 420px;
+        height: 200px;
+        }
+
+        #gps {
+            position:relative;
+            left: 25px;
+            z-index: 4;
+            height : 250px;
+            width: 450px;
+        }
+
+        span.live-icon.blue {
+            background-color: blue;
+            z-index: 5;
+            }
+            .status-circle.blue {
+                background-color: blue;
+                }
+                span.live-icon.blue:before {
+                    background-color: rgba(0, 17, 255, 0.507);
+                    }
+            #TRACKER {
+                position:absolute;
+                left: 1002px;
+                top: 200px;
+                }

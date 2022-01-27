@@ -1,0 +1,89 @@
+
+    /***********************************************LOGOUT*************************************************/
+	
+    .navigation {
+        width: 100%;
+        background-color: #222831;
+    }
+        
+      
+    .button{
+      position: absolute;
+    left: 5px;
+    text-decoration: none;
+    padding: 8px;
+    padding-left: 6px;
+    margin: 0px;
+    margin-top: 8px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: #222831;
+    opacity: 1;
+    transition: width .30s;
+    -webkit-transition: width .40s;
+    overflow: hidden;
+    z-index: 3;
+    display: flex;
+    background-attachment: fixed;
+background-repeat: no-repeat;
+border-radius: 30px;
+
+  }
+
+ .log {
+
+  top: 450px;
+
+  }
+
+  .term {
+    top: 330px;
+
+  }
+   
+  .pers {
+    top: 280px;
+
+  }
+
+  .home {
+    top: 230px;
+
+  }
+
+  img {
+        border-radius: 5px;
+        position: relative;
+        width: 27px;
+        float: left;
+      }
+      
+      .logout {
+        float: right;
+        height: 40px;
+        font-size: .6em;
+        position: relative;
+        left: 0px;
+        bottom: 7px;
+        overflow: hidden;
+        letter-spacing: 3px;
+        opacity: 0;
+        transition: opacity 0.25s;
+        -webkit-transition: opacity .15s;
+        display: flex;
+      }
+    
+      
+      a:hover {
+        width: 150px;
+        background-color: #2228317c;
+      }
+      
+      a:hover .logout{
+        opacity: 1;
+      }
+      
+      a {
+        text-decoration: none;
+      }

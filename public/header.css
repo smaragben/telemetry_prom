@@ -1,0 +1,73 @@
+header {
+    height: 40px;
+}
+.header-menu {
+    font-size: 17px;
+    line-height: 80px;
+}
+button {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 0 15px;
+    display: block;
+    line-height: 40px;
+    font-size: 17px;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    cursor: pointer;
+}
+
+button:focus {
+outline: none;
+}
+.header-menu li {
+    position: relative;
+    -webkit-transform: translateZ(0); /** To avoid a flash when hover messages **/
+}
+.header-menu-tab {
+    padding: 0 27px;
+    display: block;
+    line-height: 40px;
+    font-size: 17px;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    cursor: pointer;
+}
+.header-menu-tab:hover {
+    background: #979797;
+    border-bottom: 4px solid #11a8ab;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/** CONTAINERS **/
+.container {
+    float: left;
+margin-right: 5px;
+}
+.container2 {
+    float: right;
+}
+.block {
+    margin-bottom: 10px;
+            border-radius: 25px;
+-webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+background-color: #181B1F;
+
+}
+.block1 {
+    margin-bottom: 10px;
+            border-radius: 25px;
+-webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+background-color: #c0be34;
+
+}

@@ -1,0 +1,334 @@
+/* .table {
+    min-width: 400px;
+    max-width:1000px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.table__table{
+    border-collapse:collapse;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #009578;
+}
+
+.table__table thead tr {
+    background: #009578;
+    color: #ffffff;
+}
+
+.table__table th,
+.table__table td {
+    text-align: left;
+    padding: 9px 18px;
+    font-weight: normal;
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(18, 50px);
+    grid-gap: 10px;
+  }
+  
+  .grid_item{
+      text-align: center;
+      font-family: 'Times New Roman', sans-serif;
+      font-style:inherit;
+      font-size: 17px;
+
+  }
+
+  .timestamp{
+
+  }
+
+  .stringType {
+
+  }
+
+  .dash2{
+
+  }
+
+  .plex_page{
+
+  }
+
+  .num_of_live_cells{
+
+  }
+
+  .min_cell_voltage{
+
+  }
+
+  .max_cell_voltage{
+
+  }
+
+  .avg_cell_voltage{
+
+  }
+
+  .total_voltage{
+
+  }
+
+  .min_cell_mod_temp{
+
+  }
+
+  .max_cell_mod_temp{
+
+  }
+
+  .avg_cell_mod_temp{
+
+  }
+
+  .min_cell_balancing_rate{
+
+  }
+
+  .max_cell_balancing_rate{
+
+  }
+
+  .avg_cell_balancing_rate{
+
+  }
+
+  .current{
+
+  }
+
+  .est_charge{
+
+  }
+
+  .est_state_of_charge{
+
+  }
+
+  .min_cell_temp{
+
+  }
+
+  .max_cell_temp{
+
+  }
+
+  .avg_cell_temp{
+
+  }
+
+  .app1{
+
+  }
+
+  .app2{
+
+  }
+
+  .brake_pressure1{
+
+  }
+
+  .brake_pressure2{
+
+  }
+
+  .steering_angle{
+
+  }
+
+  .encoder_map{
+
+  }
+
+  .req_torque{
+
+  }
+
+  .act_torque{
+
+  }
+
+  .motor_rpm{
+
+  }
+
+  .motor_power{
+
+  }
+
+  .water_temp0{
+
+  }
+
+  .water_temp1{
+
+  }
+
+  .fan_per{
+
+  }
+
+  .lgbt_temp{
+
+  }
+
+  .motor_temp{
+
+  }
+
+  .acc_long{
+
+  }
+
+  .acc_lat{
+
+  }
+
+  .acc_comb{
+
+  }
+
+  .log_time{
+
+  }
+  
+  .gps_long{
+
+  }
+
+  .gps_lat{
+
+  }
+
+  .gps_speed{
+
+  }
+  
+  .linear_pos_FL{
+
+  }
+
+  .linear_speed_FL{
+
+  }
+
+  .rpm_FL{
+
+  }
+
+  .pitot{
+
+  }
+
+  .linear_pos_FR{
+
+  }
+
+  .linear_speed_FR{
+
+  }
+
+  .rpm_FR{
+
+  }
+
+  .linear_pos_RL{
+
+  }
+
+  .linear_speed_RL{
+
+  }
+
+  .rpm_RL{
+
+  }
+
+  .linear_pos_RR{
+
+  }
+
+  .linear_speed_RR{
+
+  }
+
+  .rpm_RR{
+
+  }
+
+  .lr_FL_ch1{
+
+  }
+
+  .lr_FL_ch2{
+
+  }
+
+  .lr_FL_ch3{
+
+  }
+
+  .lr_FL_ch4{
+
+  }
+
+  .lr_FR_ch1{
+
+  }
+
+  .lr_FR_ch2{
+
+  }
+
+  .lr_FR_ch3{
+
+  }
+
+  .lr_FR_ch4{
+
+  }
+
+  .lr_RL_ch1{
+
+  }
+
+  .lr_RL_ch2{
+
+  }
+
+  .lr_RL_ch3{
+
+  }
+
+  .lr_RL_ch4{
+
+  }
+
+  .lr_RR_ch1{
+
+  }
+
+  .lr_RR_ch2{
+
+  }
+
+  .lr_RR_ch3{
+
+  }
+
+  .lr_RR_ch4{
+
+  }
+
+  .grid div {
+    background-color: #009688;
+    border-radius: 5px;
+    box-shadow: black;
+  }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Telemetry Main</title>
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel = "stylesheet" href = "/main.css">
+    <link rel = "stylesheet" href = "/floatingchat.css">
+    <link rel = "stylesheet" href = "/rightcont.css">
+    <link rel = "stylesheet" href = "/header.css">
+    <link rel = "stylesheet" href = "/middlecont.css">
+    <link rel = "stylesheet" href = "/sidebar.css">
+    <link rel = "stylesheet" href = "/leftcont.css">
+    <link rel = "stylesheet" href = "/terminal.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+
+        <script src = "/socket.io/socket.io.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js'></script>
+        <div class = "main-container">
+        <!-- chat -->
+        <div class="floating-chat">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <div class="chat">
+                <div class="header">
+                    <span class="title">
+                        message to arduino
+                    </span>
+                    <button>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+                <ul class="messages">
+
+                </ul>
+                <div class="footer">
+                    <div class="text-box" contenteditable="true" disabled="true"></div>
+                    <button id="sendMessage">send</button>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="content__container">
+                <h1 class="content__container__text">
+                    PROM
+                </h1>
+
+                <ul class="content__container__list">
+                    <li class="content__container__list__item">racing</li>
+                    <li class="content__container__list__item">telemetry</li>
+                    <li class="content__container__list__item">users</li>
+                    <li class="content__container__list__item">everybody</li>
+
+
+                </ul>
+                </div>
+        </div>
+        <!-- HEADER -->
+        <header class="block">
+            <ul class="header-menu horizontal-list">
+                <li>
+                    <a class="header-menu-tab" > <button id="myBtn">Fullscreen</button> </a>
+                </li>
+            </ul>
+
+
+        </header>
+
+        <div class="navigation">
+            <a class="button log" >
+                <img src="team_logo_embel.png">
+              <div class="logout">
+                <form action = "/logout?_method=DELETE" method = "POST">
+                    <button type = "submit"> Log Out </button>
+                </form>
+              </div>
+           </a>
+        </div>
+
+        <div class="navigation">
+            <a class="button term" href="/terminal">
+              <img src="terminal.png">
+              <div class="logout">
+                    <button type = "submit" id="terminal"> Terminal </button>
+              </div>
+           </a>
+        </div>
+        <div class="navigation">
+            <a class="button pers" href="/personalize">
+              <img src="personalize.png">
+              <div class="logout">
+                <form action = "/logout?_method=DELETE" method = "POST">
+                    <button type = "submit"> Personalize </button>
+                </form>
+              </div>
+           </a>
+        </div>
+        <div class="navigation">
+            <a class="button home" href="/">
+              <img src="homepage.png">
+              <div class="logout">
+                    <button type = "submit" id="homepage"> Homepage </button>
+              </div>
+           </a>
+        </div>
+
+      <iframe src="http://localhost:3000/d-solo/Uq3GbMOnk/new-dashboard?orgId=1&refresh=1s&from=now-5m&to=now&panelId=6" width="500" height="300" frameborder="0"></iframe>
+    <!-- include js files -->
+    <script type="text/javascript" src="chat.js"></script>
+
+
+    <script>
+
+    //fullscreen button
+    document.getElementById("myBtn").addEventListener("click", ()=>{
+        document.documentElement.requestFullscreen().catch((e) => {
+            console.log(e);
+        });
+    });
+
+    document.getElementById("homepage").onclick = function () {
+        location.href = "/index.ejs";
+    };
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
